@@ -1,7 +1,4 @@
-import {
-  editorialInvestmentCases,
-  editorialInvestmentNotice,
-} from "../../content/selectedInvestmentCases.editorial";
+import { editorialInvestmentCases } from "../../content/selectedInvestmentCases.editorial";
 import { selectedInvestmentCases } from "../../content/selectedInvestmentCases";
 import { InvestmentCaseCard } from "./InvestmentCaseCard";
 import "./ExperienceActivity.css";
@@ -15,7 +12,6 @@ export function SelectedInvestmentPublished() {
   return (
     <section className="selected-cases" id="selected-investment-experience" aria-labelledby="selected-cases-title">
       <div className="section-container">
-        {usingEditorial ? <p className="experience-review-notice">{editorialInvestmentNotice}</p> : null}
         <p className="experience-kicker">Selected experience</p>
         <h2 id="selected-cases-title">Selected Investment Experience</h2>
         <p className="experience-summary">
