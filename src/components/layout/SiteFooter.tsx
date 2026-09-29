@@ -3,6 +3,7 @@ import { isPrivacyPublished } from "../../content/privacy";
 import { isTermsPublished } from "../../content/terms";
 import { footerItems, itemHref } from "../../config/navigation";
 import { currentYear, site } from "../../config/site";
+import { LinkedInIcon, MailIcon, TelegramIcon, XIcon } from "../icons/Icons";
 import { SectionContainer } from "../ui/SectionContainer";
 import "./SiteFooter.css";
 
@@ -38,6 +39,46 @@ export function SiteFooter() {
             <p>{site.footerNote}</p>
             {site.contactEmail ? <p>{site.contactEmail}</p> : null}
             {site.contactAddress ? <p>{site.contactAddress}</p> : null}
+            <div className="footer-contacts">
+              {site.linkedInUrl ? (
+                <a
+                  href={site.linkedInUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Novarin Capital on LinkedIn"
+                >
+                  <LinkedInIcon />
+                </a>
+              ) : null}
+              {site.xUrl ? (
+                <a href={site.xUrl} target="_blank" rel="noopener noreferrer" aria-label="Novarin Capital on X">
+                  <XIcon />
+                </a>
+              ) : (
+                <span aria-hidden="true">
+                  <XIcon />
+                </span>
+              )}
+              {site.telegramUrl ? (
+                <a
+                  href={site.telegramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Novarin Capital on Telegram"
+                >
+                  <TelegramIcon />
+                </a>
+              ) : (
+                <span aria-hidden="true">
+                  <TelegramIcon />
+                </span>
+              )}
+              {site.contactEmail ? (
+                <a href={`mailto:${site.contactEmail}`} aria-label={`Email ${site.contactEmail}`}>
+                  <MailIcon />
+                </a>
+              ) : null}
+            </div>
           </div>
           <nav aria-label="Footer">
             <ul>

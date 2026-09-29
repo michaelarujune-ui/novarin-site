@@ -100,6 +100,39 @@ export function ArrowIcon({ className }: IconProps) {
   );
 }
 
+export function XIcon({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+      <path d="M14.7 10.3 21.4 3h-1.6l-5.8 6.4L9.3 3H3.6l7 10.1L3.6 21h1.6l6.2-6.8 4.9 6.8h5.7l-7.3-10.7Zm-2.2 2.4-.7-1-5.7-7.8h2.4l4.6 6.3.7 1 6 8.2h-2.4l-4.9-6.7Z" />
+    </svg>
+  );
+}
+
+export function TelegramIcon({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+      <path d="M20.7 4.3 3.4 11c-1.2.5-1.2 1.1-.2 1.4l4.4 1.4 1.7 5.2c.2.6.1.8.7.8.3 0 .5-.1.7-.4l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.8-.8l3.2-15.1c.3-1.3-.5-1.9-1.3-1.5ZM8.6 13.6l9.3-5.8c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.2-2-4.5Z" />
+    </svg>
+  );
+}
+
+export function MailIcon({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true" fill="none">
+      <rect x="3.2" y="5.2" width="17.6" height="13.6" rx="1.6" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M4 7.2 12 13l8-5.8" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+export function LinkedInIcon({ className }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+      <path d="M4.7 3.4A1.7 1.7 0 1 0 4.7 6.8 1.7 1.7 0 0 0 4.7 3.4ZM3.2 8.4h3V20.6h-3V8.4Zm5.1 0h2.9v1.7h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7v7.4h-3v-6.6c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5v6.7h-3V8.4Z" />
+    </svg>
+  );
+}
+
 export function SearchIcon({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 32 32" aria-hidden="true" fill="none">

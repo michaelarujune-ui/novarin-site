@@ -56,6 +56,29 @@
   text-decoration: none;
 }
 
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  color: var(--color-gold);
+}
+
+.footer-contacts a,
+.footer-contacts span {
+  display: inline-flex;
+  color: inherit;
+}
+
+.footer-contacts svg {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-contacts a:hover {
+  color: var(--color-white);
+}
+
 .site-footer nav a:hover {
   color: var(--color-gold);
 }

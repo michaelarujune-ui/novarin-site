@@ -10,6 +10,12 @@ export type SiteConfig = {
   contactEmail?: string;
   /** Verified postal address. Leave unset until supplied. */
   contactAddress?: string;
+  /** Public LinkedIn company page. */
+  linkedInUrl?: string;
+  /** Public X profile. Leave unset until the account is supplied. */
+  xUrl?: string;
+  /** Public Telegram profile. Leave unset until the account is supplied. */
+  telegramUrl?: string;
   /** HTTPS endpoint that accepts introduction submissions. */
   formEndpoint?: string;
   /** Set only after privacy handling for the form is approved. */
@@ -39,6 +45,8 @@ export const site: SiteConfig = {
   brandMark: "/images/novarin-mark.png",
   brandWordmark: "/images/novarin-wordmark.png",
   footerNote: "Focused on the foundations of a more open digital economy.",
+  contactEmail: "contact@novarin.capital",
+  linkedInUrl: "https://linkedin.com/company/novarin-capital",
 };
 
 export const currentYear = new Date().getFullYear();
