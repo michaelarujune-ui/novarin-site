@@ -108,14 +108,6 @@ export function XIcon({ className }: IconProps) {
   );
 }
 
-export function TelegramIcon({ className }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-      <path d="M20.7 4.3 3.4 11c-1.2.5-1.2 1.1-.2 1.4l4.4 1.4 1.7 5.2c.2.6.1.8.7.8.3 0 .5-.1.7-.4l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.8-.8l3.2-15.1c.3-1.3-.5-1.9-1.3-1.5ZM8.6 13.6l9.3-5.8c.4-.3.8-.1.5.2l-7.6 6.9-.3 3.2-2-4.5Z" />
-    </svg>
-  );
-}
-
 export function MailIcon({ className }: IconProps) {
   return (
     <svg className={className} viewBox="0 0 24 24" aria-hidden="true" fill="none">

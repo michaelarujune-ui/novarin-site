@@ -17,6 +17,7 @@ export type LeadershipProfile = {
   proposedRemit: string | null;
   portrait?: LeadershipPortrait;
   linkedInUrl?: string;
+  email?: string;
   profileApproved: boolean;
   portraitApproved: boolean;
   /** Preview-only placeholder caption, such as PORTRAIT 01. */

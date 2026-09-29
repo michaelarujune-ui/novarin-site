@@ -1,4 +1,5 @@
 import type { LeadershipProfile } from "../../types/leadership";
+import { LinkedInIcon, MailIcon } from "../icons/Icons";
 import { Reveal } from "../motion/Reveal";
 import "./LeadershipRoster.css";
 
@@ -78,7 +79,28 @@ function ProfileCard({ profile, index }: { profile: LeadershipProfile; index: nu
           </div>
         )}
       </div>
-      {name ? <h3>{name}</h3> : null}
+      {name ? (
+        <div className="leadership-name">
+          <h3>{name}</h3>
+          <span className="leadership-name-links">
+            {profile.linkedInUrl ? (
+              <a
+                href={profile.linkedInUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${name} on LinkedIn`}
+              >
+                <LinkedInIcon />
+              </a>
+            ) : null}
+            {profile.email ? (
+              <a href={`mailto:${profile.email}`} aria-label={`Email ${profile.email}`}>
+                <MailIcon />
+              </a>
+            ) : null}
+          </span>
+        </div>
+      ) : null}
       <p className="leadership-title">{profile.title}</p>
     </Reveal>
   );

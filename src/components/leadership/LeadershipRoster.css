@@ -54,12 +54,42 @@
   list-style: none;
 }
 
+.leadership-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 10px;
+  margin-top: 16px;
+}
+
 .leadership-card h3 {
-  margin: 16px 0 0;
+  margin: 0;
   font-family: var(--font-serif);
   font-size: 26px;
   font-weight: 500;
   line-height: 1.15;
+}
+
+.leadership-name-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-gold-dark);
+}
+
+.leadership-name-links a {
+  display: inline-flex;
+  color: inherit;
+}
+
+.leadership-name-links svg {
+  width: 22px;
+  height: 22px;
+}
+
+.leadership-name-links a:hover {
+  color: var(--color-navy);
 }
 
 .leadership-title,
@@ -71,6 +101,7 @@
 
 .leadership-title {
   font-weight: 600;
+  text-align: center;
 }
 
 .leadership-status {
@@ -183,8 +214,11 @@
     width: 100%;
   }
 
-  .leadership-card h3 {
+  .leadership-name {
     margin-top: 14px;
+  }
+
+  .leadership-card h3 {
     font-size: clamp(20px, 1.65vw, 24px);
   }
 

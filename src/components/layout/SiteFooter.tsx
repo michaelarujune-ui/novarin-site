@@ -3,7 +3,7 @@ import { isPrivacyPublished } from "../../content/privacy";
 import { isTermsPublished } from "../../content/terms";
 import { footerItems, itemHref } from "../../config/navigation";
 import { currentYear, site } from "../../config/site";
-import { LinkedInIcon, MailIcon, TelegramIcon, XIcon } from "../icons/Icons";
+import { LinkedInIcon, MailIcon, XIcon } from "../icons/Icons";
 import { SectionContainer } from "../ui/SectionContainer";
 import "./SiteFooter.css";
 
@@ -57,20 +57,6 @@ export function SiteFooter() {
               ) : (
                 <span aria-hidden="true">
                   <XIcon />
-                </span>
-              )}
-              {site.telegramUrl ? (
-                <a
-                  href={site.telegramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Novarin Capital on Telegram"
-                >
-                  <TelegramIcon />
-                </a>
-              ) : (
-                <span aria-hidden="true">
-                  <TelegramIcon />
                 </span>
               )}
               {site.contactEmail ? (

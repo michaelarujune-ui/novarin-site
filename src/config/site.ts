@@ -14,8 +14,6 @@ export type SiteConfig = {
   linkedInUrl?: string;
   /** Public X profile. Leave unset until the account is supplied. */
   xUrl?: string;
-  /** Public Telegram profile. Leave unset until the account is supplied. */
-  telegramUrl?: string;
   /** HTTPS endpoint that accepts introduction submissions. */
   formEndpoint?: string;
   /** Set only after privacy handling for the form is approved. */
