@@ -14,7 +14,7 @@ export const contactImages = {
 export const contactMeta = {
   title: "Contact | Novarin Capital",
   description:
-    "Contact Novarin Capital about an early-stage crypto business, a potential collaboration or a general inquiry.",
+    "Contact Novarin Capital about an early-stage exchange, wallet or payment company, a potential collaboration or a general inquiry.",
 };
 
 export const contactHero = {
@@ -22,14 +22,14 @@ export const contactHero = {
   titleLead: "A good conversation.",
   emphasis: "A good beginning.",
   summary:
-    "Tell us about your company, the problem you are solving and where your work fits within the crypto ecosystem.",
+    "Tell us about your customers, the partners you rely on and what you need to prove next.",
   aside: ["Founders", "Partners", "Questions"],
 };
 
 export const contactIntro = {
   eyebrow: "Contact Novarin",
   title: "Tell us what you're building.",
-  summary: "Choose the purpose of your inquiry, then share a brief introduction.",
+  summary: "Choose the purpose of your inquiry, then give us a short introduction.",
 };
 
 export const contactGuidance = {
@@ -40,17 +40,17 @@ export const contactGuidance = {
     {
       number: "01",
       title: "The customer",
-      body: "Who do you serve, and what do they need?",
+      body: "Who uses your exchange, wallet or payment service, and what did they use before?",
     },
     {
       number: "02",
-      title: "The solution",
-      body: "What are you building, and why does this approach matter?",
+      title: "The partners",
+      body: "Which banks, liquidity providers, custodians or processors do you work with today?",
     },
     {
       number: "03",
-      title: "The next priority",
-      body: "What have you learned, and what comes next?",
+      title: "The next proof",
+      body: "What have you proven so far, and what is the next thing you need to show?",
     },
   ],
   safetyTitle: "Share an introduction, not confidential records.",
@@ -62,7 +62,7 @@ export const inquiryTypes: { value: InquiryType; label: string; help: string }[]
   {
     value: "founder",
     label: "Founder inquiry",
-    help: "For founders building in crypto, blockchain infrastructure, digital finance or emerging applications.",
+    help: "For founders operating or building exchanges, wallets and stablecoin payment services.",
   },
   {
     value: "partnership",
@@ -81,27 +81,32 @@ export const productStages = [...productStageOptions];
 export const contactFaq = {
   eyebrow: "Before you reach out",
   title: "A few useful details.",
-  body: "Keep the first conversation focused on your business and the problem you are solving.",
+  body: "Keep the first conversation focused on your customers, your partners and how the business actually runs.",
   items: [
     {
-      question: "Do you only consider payment businesses?",
+      question: "Do you only invest in exchanges, wallets and payment companies?",
       answer:
-        "No. Payments are one part of our focus. Our interests also include blockchain infrastructure, security, tokenization, DeFi, AI-linked networks and digital ownership applications.",
+        "These are our core focus. We also consider infrastructure, compliance and tokenization businesses where the customer is one of those operators and the problem is recurring.",
+    },
+    {
+      question: "Does my company need to be large or already licensed?",
+      answer:
+        "No. We invest at an early stage, often in small teams still shaping the operating model. Tell us which permissions the activity requires in your markets and where you stand with them. We do not provide or guarantee licenses, registrations or banking relationships.",
     },
     {
       question: "Does a company need its own token?",
       answer:
-        "A token is not a prerequisite. We consider whether the proposed technology and business model serve a clear purpose. Where a token is involved, its role and incentives need to be explained alongside the product.",
+        "A token is not a prerequisite, and most of the businesses we look at do not have one. Where a token is involved, its role and incentives need to be explained alongside the product.",
     },
     {
-      question: "Do I need a finished product?",
+      question: "Do I need live volume or a finished product?",
       answer:
-        "You may introduce an idea, prototype or operating business. Describe what has been built or tested and which assumptions remain open. The evidence considered should reflect the company's stage.",
+        "You may introduce a pilot, an early product or an operating business. Describe what has been built or tested, which partners are in place and which assumptions are still open. The evidence we expect reflects the company's stage.",
     },
     {
       question: "What should a first introduction include?",
       answer:
-        "Start with the customer, the problem, your product and your next priority. Include the markets you serve and a brief description of how the business expects to earn revenue. A concise, non-confidential summary is enough to begin.",
+        "The customer, the product, the partners you rely on, the markets you serve, how the business earns revenue after partner costs and your next priority. A concise, non-confidential summary is enough to begin.",
     },
     {
       question: "Can I share a pitch deck or confidential materials?",
@@ -109,9 +114,9 @@ export const contactFaq = {
         "Where the inquiry form is available, you may include a link to a non-confidential deck. Do not send identity documents, account credentials, private keys or confidential customer records through a general inquiry. Sensitive material requires a separately agreed process.",
     },
     {
-      question: "Does an introduction mean Novarin will invest?",
+      question: "Does an introduction mean Novarin will invest or introduce us to banks?",
       answer:
-        "No. An inquiry begins a conversation; it is not a funding commitment or a guarantee of review. Any potential investment would require its own assessment, approvals, agreed terms and documentation.",
+        "No. An inquiry begins a conversation. It is not a funding commitment, a guarantee of review or an introduction to any bank or partner. Any potential investment requires its own assessment, approvals, agreed terms and documentation.",
     },
   ],
 };
@@ -126,7 +131,7 @@ export const inquiryDeliveryEnabled = false;
 
 export const contactFormCopy = {
   founderMessagePlaceholder:
-    "Describe your customer, product, business model and next priority.",
+    "Describe your customer, your product, the partners you rely on, how the business earns revenue and your next priority.",
 };
 
 export const privacyNoticeHref: string | undefined = undefined;

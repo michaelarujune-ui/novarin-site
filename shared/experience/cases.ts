@@ -55,7 +55,7 @@ export function publishedInvestmentCases(records: InvestmentCaseRecord[]): Publi
   return records
     .filter(caseQualifies)
     .sort((left, right) => left.order - right.order)
-    .slice(0, 2)
+    .slice(0, 6)
     .map((record) => ({
       id: record.id,
       order: record.order,

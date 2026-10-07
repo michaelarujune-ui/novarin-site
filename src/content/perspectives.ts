@@ -14,7 +14,7 @@ export const perspectivesImages = {
 export const perspectivesMeta = {
   title: "Perspectives | Novarin Capital",
   description:
-    "Questions and frameworks on crypto infrastructure, digital finance, emerging applications and the businesses behind them.",
+    "Questions and frameworks for the people building digital-asset exchanges, wallets and payment services.",
 };
 
 export const perspectivesHero = {
@@ -22,9 +22,9 @@ export const perspectivesHero = {
   titleLead: "Perspectives across the",
   emphasis: "digital economy.",
   summary:
-    "Questions and frameworks on crypto infrastructure, digital finance, emerging applications and the businesses behind them.",
+    "Questions and frameworks for the people building digital-asset exchanges, wallets and payment services.",
   contextNote:
-    "Our research interests span the wider crypto ecosystem. The current payments and settlement series explores one part of that perspective, with attention to customers, infrastructure, operating responsibilities and company building.",
+    "Our research starts with the questions exchange, wallet and payment operators face every day: customers, partners, settlement and the responsibilities that come with holding other people's money. The current payments and settlement series is the first part of that work.",
   editorialNote:
     "We distinguish observations, assumptions and open questions. These perspectives are intended to support a more useful discussion, not to present a market forecast or imply an investment in a company mentioned.",
   aside: ["Markets", "Ideas", "People", "Progress"],

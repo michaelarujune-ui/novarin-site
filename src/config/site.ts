@@ -35,14 +35,14 @@ export const site: SiteConfig = {
   name: "NOVARIN CAPITAL",
   tagline: "IDEAS. INFRASTRUCTURE. OPPORTUNITY.",
   description:
-    "Novarin Capital focuses on early-stage companies across blockchain infrastructure, digital finance and applications shaping a more open digital economy.",
+    "Novarin Capital invests in early-stage companies operating digital-asset exchanges, wallets and stablecoin payment services.",
   language: "en",
   launchStatus: __NOVARIN_PREVIEW__ ? "preview" : "publishable",
   privacyHandlingApproved: false,
   heroImage: "/images/01-home-hero.jpg",
   brandMark: "/images/novarin-mark.png",
   brandWordmark: "/images/novarin-wordmark.png",
-  footerNote: "Focused on the foundations of a more open digital economy.",
+  footerNote: "Early-stage capital for exchanges, wallets and payment services.",
   contactEmail: "contact@novarin.capital",
   linkedInUrl: "https://linkedin.com/company/novarin-capital",
 };

@@ -30,30 +30,30 @@ export const investmentFocusImages: {
 export const investmentFocusMeta = {
   title: "Investment Focus | Novarin Capital",
   description:
-    "Explore Novarin Capital's investment focus across blockchain infrastructure, stablecoins, tokenization, DeFi, AI-linked networks and digital ownership.",
+    "Novarin Capital's investment focus: digital-asset exchanges and trading venues, wallets and custody, and stablecoin payment services.",
 };
 
 export const investmentFocusHero = {
   eyebrow: "Investment focus",
-  lines: ["A broad view of crypto.", "A disciplined view of opportunity."],
+  lines: ["Exchanges. Wallets. Payments.", "Assessed the way operators assess them."],
   emphasis: "",
   summary:
-    "Our focus covers the infrastructure, financial systems and applications of the crypto economy. We assess companies selectively, with attention to customer demand, technical design, commercial economics and the responsibilities behind the product.",
-  aside: ["People", "Infrastructure", "Markets", "Real impact"],
+    "We invest in the businesses that move and hold digital value for customers. Our review starts with the customer, follows the money through partners and settlement, and ends with what the company actually keeps.",
+  aside: ["Customers", "Partners", "Settlement", "Economics"],
 };
 
 export const focusAreas = {
   eyebrow: "Our focus areas",
-  title: "Six connected areas of focus.",
+  title: "Three core businesses. Adjacent infrastructure where it serves them.",
   supporting:
-    "These are overlapping areas of interest, not separate funds or lists of current holdings. Each company is assessed in its own context.",
+    "These are areas of interest, not separate funds or a list of current holdings. Each company is assessed in its own context.",
 };
 
 export const investmentApproach = {
   eyebrow: "Our investment approach",
-  titleLines: ["Different sectors.", "A common investment discipline."],
-  body: "Across these themes, we return to the same questions: who needs the product, what makes it work, how the business earns revenue and which assumptions could change the outcome. The relevant evidence varies by sector, but the need for clear reasoning does not.",
-  overlay: ["Real solutions", "for a more", "connected", "economy."],
+  titleLines: ["Three businesses.", "One set of questions."],
+  body: "Whether the company runs a venue, a wallet or a payment service, we return to the same questions: who the customer is, which partners the business depends on, how settlement actually completes and what the company keeps after everyone else is paid.",
+  overlay: ["Built for", "the people who", "move and hold", "digital value."],
   cta: {
     label: "Our approach",
     href: "/approach",

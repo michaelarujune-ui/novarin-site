@@ -27,7 +27,7 @@ function record(partial: Partial<InvestmentCaseRecord>): InvestmentCaseRecord {
 }
 
 describe("selected investment cases", () => {
-  it("publishes one or two qualifying cases and stops at two", () => {
+  it("publishes qualifying cases in order and keeps the selection limited", () => {
     const one = publishedInvestmentCases([record({ id: "a" })]);
     assert.equal(one.length, 1);
     const three = publishedInvestmentCases([
@@ -35,7 +35,7 @@ describe("selected investment cases", () => {
       record({ id: "b", order: 2, publicTitle: "Second" }),
       record({ id: "c", order: 3, publicTitle: "Third" }),
     ]);
-    assert.deepEqual(three.map((item) => item.id), ["a", "b"]);
+    assert.deepEqual(three.map((item) => item.id), ["a", "b", "c"]);
   });
 
   it("returns nothing when no case qualifies", () => {

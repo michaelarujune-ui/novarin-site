@@ -22,40 +22,40 @@ export const approachImages: {
 export const approachMeta = {
   title: "Our Approach | Novarin Capital",
   description:
-    "A practical framework for assessing customers, technical design, economics and operating responsibilities across early-stage crypto businesses.",
+    "How Novarin Capital evaluates early-stage exchanges, wallets and payment companies: customers, partners, settlement and unit economics.",
 };
 
 export const approachHero = {
   eyebrow: "Our approach",
-  titleLead: "Long-term thinking",
-  titleTail: "for",
-  emphasis: "real-world progress.",
+  titleLead: "We evaluate the business",
+  titleTail: "the way",
+  emphasis: "an operator would.",
   summary:
-    "Our approach combines independent research, practical judgment and a long-term view of companies building across crypto. We aim to understand the business as it operates today and the assumptions behind its next stage of development.",
-  aside: ["People", "Perspective", "Partnership", "Progress"],
+    "Our review follows the money: who sends it, who holds it, who settles it and what the company keeps. We aim to understand the business as it runs today and the assumptions behind its next stage.",
+  aside: ["Customers", "Partners", "Settlement", "Economics"],
 };
 
 export const approachPhilosophy = {
   eyebrow: "Our investment philosophy",
-  titleLines: ["Practical capital.", "Constructive partners."],
-  body: "We begin with the customer and work through the product, its economics and its operating responsibilities. A clear investment view should explain both what is attractive and what remains uncertain. We value founders who can discuss those uncertainties directly and show how their thinking changes with evidence.",
+  titleLines: ["Practical capital.", "Operators' questions."],
+  body: "We begin with the customer and work through partners, settlement and economics. A clear investment view explains both what is attractive and what is uncertain. We value founders who can talk about a failed payout, a lost banking partner or a difficult listing decision as directly as they talk about growth.",
   rows: [
     {
       id: "perspective",
       title: "Long-term perspective",
-      body: "We look for enduring customer value, not short-term trends.",
+      body: "We look for customers who stay, not volume that visits.",
       icon: "leaf" as const,
     },
     {
       id: "partnership",
       title: "Founder partnership",
-      body: "We value honest dialogue, aligned expectations and founder autonomy.",
+      body: "Honest dialogue, clear expectations and founder autonomy.",
       icon: "people" as const,
     },
     {
       id: "discipline",
-      title: "Disciplined approach",
-      body: "We consider commercial fundamentals alongside operational realities.",
+      title: "Operating discipline",
+      body: "Partner dependencies and settlement realities count as much as the pitch.",
       icon: "layers" as const,
     },
   ],
@@ -82,7 +82,7 @@ export const approachValues = {
     {
       id: "impact",
       title: "Impact",
-      body: "We look for useful products and infrastructure with clear customer value.",
+      body: "We back products that customers and partners are willing to rely on.",
       icon: "bars" as const,
     },
   ],
@@ -100,9 +100,9 @@ export const approachProcess = {
       id: "source",
       number: "01",
       title: "Source",
-      body: "Understand the customer, the problem and the company's current stage.",
+      body: "Understand the customer, the partners already in place and the company's current stage.",
       detail:
-        "An initial introduction should explain who uses the product, what needs to improve and what has been built or tested. We distinguish an idea, a working prototype, a pilot and an operating business so that the discussion starts from the evidence actually available.",
+        "An initial introduction should tell us who the customer is, which partners the business already works with and what has been built or tested. We distinguish a pilot corridor, a wallet with early users and a venue with live liquidity so the conversation starts from the evidence that exists, not from the plan.",
       discussionOutput:
         "A clear description of the opportunity, its stage and the main questions for further review.",
     },
@@ -110,9 +110,9 @@ export const approachProcess = {
       id: "evaluate",
       number: "02",
       title: "Evaluate",
-      body: "Examine adoption, technical design, economics and material dependencies.",
+      body: "Examine customers, partners, custody, settlement and revenue after partner costs.",
       detail:
-        "Review can include product evidence, customer behavior, architecture, security, revenue quality and operating requirements. Where a token is involved, we also consider its function, incentives and governance. The depth of review should fit the company and the investment under discussion, without treating every early business as if it had the same history or resources.",
+        "Review can include customer behavior, partner agreements, custody and key-management design, settlement and reconciliation flows, the compliance obligations in the markets served and revenue after partner costs. Where a token is involved, we consider its function and incentives. Depth is matched to the company and the investment under discussion, without treating a small team as if it had the history or resources of a large one.",
       discussionOutput:
         "An assessment of the investment case, material uncertainties and the work needed to resolve them.",
     },
@@ -132,7 +132,7 @@ export const approachProcess = {
       title: "Grow",
       body: "Revisit agreed priorities as the business develops.",
       detail:
-        "A company's needs may change as it improves its product, adds customers or considers another market. A useful investment relationship makes room to review those priorities and the evidence behind them. Any additional support or future investment should be discussed on its own merits rather than assumed.",
+        "Needs change as a company adds a corridor, a banking partner, a new asset or a second customer segment. A useful investment relationship makes room to revisit those priorities with the evidence behind them. Any additional support or future investment is discussed on its own merits rather than assumed.",
       discussionOutput:
         "Clear next priorities and an honest view of progress, constraints and further decisions.",
     },
@@ -142,49 +142,49 @@ export const approachProcess = {
     items: [
       {
         label: "Customer evidence",
-        body: "Who has the problem, who uses the product and who pays? What has been observed rather than assumed?",
+        body: "Who uses the service, what did they use before and what has been observed rather than assumed?",
       },
       {
-        label: "Distribution",
-        body: "How does the company reach appropriate customers, and what is involved in moving from a conversation to repeat use?",
+        label: "Partners",
+        body: "Which banks, liquidity providers, custodians and processors matter, what do they cost and what is the alternative if one leaves?",
       },
       {
-        label: "Technical design",
-        body: "Which components are essential, what can the team explain and maintain, and what remains outside its control?",
+        label: "Custody & settlement",
+        body: "Who holds customer assets, how are keys controlled and how does settlement actually complete when a partner is slow or a transaction fails?",
       },
       {
-        label: "Business economics",
-        body: "Where does revenue accrue, what does delivery cost and how do incentives or concentration affect the model?",
+        label: "Economics",
+        body: "What is left after fees, spreads, partner costs and support, and does it improve with scale?",
       },
       {
-        label: "Operating dependencies",
-        body: "Which providers, permissions, assets and counterparties matter to continued operation, and what alternatives exist?",
+        label: "Permissions",
+        body: "Which registrations or licenses does the activity require in the markets served, and what is the current status?",
       },
       {
         label: "Execution",
-        body: "Which decisions belong to the team, what work comes next and what resources are required to carry it out?",
+        body: "Which decisions belong to the team, what comes next and what does it take to carry it out?",
       },
     ],
   },
   supportDiscussions: {
     title: "Define where a partner can be useful.",
-    intro: "Support should start with the company's priorities and a realistic discussion of what can be contributed. Potential areas for discussion include:",
+    intro: "Support starts with the company's priorities and a realistic view of what we can contribute. Potential areas include:",
     items: [
       {
         label: "Commercial focus",
-        body: "Clarifying customer segments, evaluating pilot opportunities and considering relevant introductions where an appropriate relationship exists.",
+        body: "Clarifying customer segments, evaluating pilot corridors or venues and considering relevant introductions where an appropriate relationship exists.",
       },
       {
         label: "Operating priorities",
-        body: "Discussing provider dependencies, reporting needs and the issues that may require specialized technical, financial or legal input.",
+        body: "Discussing partner dependencies, custody and settlement design, reporting needs and the issues that require specialist technical, financial or legal input.",
       },
       {
         label: "Organization",
-        body: "Identifying the responsibilities, hiring priorities and external capabilities needed for the next stage.",
+        body: "Identifying the operating, compliance and engineering responsibilities needed for the next stage, and the hires or external capabilities that fill them.",
       },
       {
         label: "Financing preparation",
-        body: "Organizing the company's narrative, available evidence and next funding requirements without guaranteeing a future financing outcome.",
+        body: "Organizing the narrative, the evidence and the next funding requirement without guaranteeing a future financing outcome.",
       },
     ],
     closing:

@@ -1,12 +1,10 @@
-import { editorialInvestmentCases } from "../../content/selectedInvestmentCases.editorial";
 import { selectedInvestmentCases } from "../../content/selectedInvestmentCases";
 import { InvestmentCaseCard } from "./InvestmentCaseCard";
 import "./ExperienceActivity.css";
 
+/** Only owner-approved cases are shown. Illustrative examples are not presented as a track record. */
 export function SelectedInvestmentPublished() {
-  const approved = selectedInvestmentCases();
-  const usingEditorial = approved.length === 0;
-  const cases = usingEditorial ? editorialInvestmentCases : approved;
+  const cases = selectedInvestmentCases();
   if (cases.length === 0) return null;
 
   return (

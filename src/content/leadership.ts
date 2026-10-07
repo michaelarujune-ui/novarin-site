@@ -33,12 +33,12 @@ export const leadershipHero = {
 };
 
 export const leadershipRosterIntro =
-  "Our leadership presentation is organized around responsibility: investment judgment, operating oversight and specialist advice. Individual profiles describe the person's actual role and relevant experience rather than a collective claim about the firm's history.";
+  "Our team is organized around the responsibilities an exchange, wallet or payment company actually carries: investment judgment, operating oversight and specialist advice. Each profile describes the person's own role and experience, not a collective claim about the firm.";
 
 export const leadershipOperations = {
   eyebrow: "Investment & operations",
   title: "Clear roles. Shared purpose.",
-  summary: "Investment judgment, sector perspective and operating responsibility.",
+  summary: "Investment judgment, sector experience and operating responsibility.",
 };
 
 export const leadershipAdvisory = {

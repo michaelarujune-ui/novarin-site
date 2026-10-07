@@ -8,7 +8,7 @@ export type MarketingClosePage =
 /** Shared closing band copy (matches Our Approach). Titles vary by page. */
 export const marketingCloseShared = {
   eyebrow: "Let's build together",
-  body: "We welcome conversations with founders working on practical payment and settlement solutions.",
+  body: "We welcome conversations with founders operating or building exchanges, wallets and stablecoin payment services.",
   cta: {
     label: "Start a conversation",
     href: "/contact",
@@ -17,10 +17,10 @@ export const marketingCloseShared = {
 
 const marketingCloseTitles: Record<MarketingClosePage, string> = {
   about: "Tell us what you're building.",
-  "investment-focus": "Building a more open financial future.",
-  approach: "Backing founders building a more open financial future.",
+  "investment-focus": "Building a venue, a wallet or a payment service?",
+  approach: "Backing the teams that move and hold digital value.",
   leadership: "Partnership built on clarity and long-term thinking.",
-  perspectives: "Ideas for a more open financial future.",
+  perspectives: "Ideas for the people running these businesses.",
 };
 
 const marketingCloseTitleIds: Record<MarketingClosePage, string> = {

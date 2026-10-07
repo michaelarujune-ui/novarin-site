@@ -11,125 +11,109 @@ export type FocusSectorCard = {
   anchorAliases?: string[];
 };
 
+/**
+ * Three core businesses first, then adjacent infrastructure that serves them.
+ * Anchor aliases keep older fragment links (#payment-infrastructure etc.) scrolling to a related card.
+ */
 export const focusSectorCards: FocusSectorCard[] = [
   {
-    id: "blockchain-infrastructure-security",
-    icon: "shield",
-    title: "Blockchain Infrastructure & Security",
-    description: "The protocols, tools and safeguards that support digital-asset networks.",
+    id: "exchanges-trading-venues",
+    icon: "bars",
+    title: "Exchanges & Trading Venues",
+    description: "Spot and OTC venues, brokerages and the matching, custody and settlement behind them.",
     overview:
-      "We consider the systems developers and businesses use to build, connect and operate blockchain products. The starting point is a practical requirement: executing transactions, accessing reliable data, protecting assets or making development less complex. We then examine the architecture, the alternatives and the work needed to maintain the service. A technically impressive product needs a reason to be adopted and a credible way to support its customers over time.",
+      "We start with who trades on the venue and why they chose it over the alternatives they already had. We then follow an order through matching, custody, settlement and withdrawal, and ask who is responsible at each step. Listing policy, market-maker arrangements and incident history tell us how the business is actually run. Volume is a result, not an explanation.",
     businessTypes:
-      "Core blockchain and Bitcoin infrastructure; scaling and interoperability; developer tools; wallets and custody technology; data services; security monitoring; privacy and compliance tooling.",
+      "Retail and institutional spot exchanges; OTC and block desks; brokerage front-ends; matching engines; exchange custody and settlement services; market-data and surveillance tools built for venues.",
     commercialQuestions:
-      "Who pays for the capability, and on what basis? We examine subscription, usage-based, licensing and enterprise models in relation to delivery costs, customer concentration and retention.",
+      "We separate gross trading fees from what remains after maker rebates, liquidity-provider costs, custody and banking charges and compliance spend. Concentration in a few traders or a single market maker is examined directly, as is the cost of keeping liquidity on quiet days.",
     questionsWeAsk: [
-      "Which recurring developer or business problem is being solved?",
-      "What advantage remains after comparing reliability, integration effort and total cost?",
-      "Which security assumptions and external dependencies need to remain valid?",
+      "Who trades here, and what did they use before?",
+      "Where does liquidity come from, and what does it cost to keep it?",
+      "How are custody, listings and outages decided, and who signs off?",
     ],
     keyDependencies:
-      "Areas for review include key management, privileged access, upgrades, network changes and concentration in external providers. We look for a clear explanation of both normal operation and recovery when something goes wrong.",
-    anchorAliases: ["payment-infrastructure", "local-settlement"],
+      "Banking and fiat on-ramps, custody arrangements, market-maker agreements, the registrations or licenses the activity requires in each market served and key-person concentration in operations. We expect a clear account of normal days and bad days.",
+    anchorAliases: ["defi-financial-infrastructure"],
   },
   {
-    id: "stablecoins-payments",
-    icon: "coins",
-    title: "Stablecoins & Payments",
-    description: "Tools connecting digital value with payment, treasury and local settlement needs.",
+    id: "wallets-custody",
+    icon: "shield",
+    title: "Wallets & Custody",
+    description: "Self-custody and hosted wallets, key management and the services built around them.",
     overview:
-      "We look at the complete journey from a payer's instruction to funds being available to the intended recipient. Stablecoins may be part of that journey, but the surrounding product also needs onboarding, conversion, reconciliation and support. We examine which customer is being served, what the current alternatives cost and where the proposed service changes the experience. The investment case should explain the whole operating model rather than relying on the speed of one transfer.",
+      "A wallet is a trust relationship before it is a product. We ask why a user installs it, why they keep it and what they would lose if it disappeared. Key management, recovery and the handling of customer assets are examined as operating responsibilities, not features. Where a wallet earns from swaps, staking or services, we look at the partner behind each one and what the company controls itself.",
     businessTypes:
-      "Stablecoin infrastructure; merchant acceptance; business payments; cross-border collection and payout services; treasury tools; settlement orchestration and reconciliation.",
+      "Consumer and business wallets; hosted and MPC custody; recovery and key-management tools; embedded wallet infrastructure for applications, exchanges and payment companies.",
     commercialQuestions:
-      "We distinguish payment value from revenue and examine processing charges, conversion costs, provider fees, support costs and liquidity requirements. Pricing should be assessed for the actual customer and route, not as one unexplained blended figure.",
+      "Revenue can come from software fees, swap or routing spreads, staking or yield services, or enterprise contracts. We examine which of these the company controls, what it shares with partners and how acquisition cost compares with the value of a user who is still active a year later.",
     questionsWeAsk: [
-      "Who receives, holds, converts and ultimately pays out the funds?",
-      "What makes the service useful enough for a customer to use repeatedly?",
-      "How are delayed, rejected or mismatched payments resolved?",
+      "Why does a user keep this wallet after the first month?",
+      "How are keys protected and recovered, and who can access customer assets?",
+      "Which revenue does the company control, and which is passed through a partner?",
     ],
     keyDependencies:
-      "Review includes banking and payout partners, asset custody, liquidity, issuer exposure and operational responsibilities. Where permissions or legal duties are involved, the relevant activity and jurisdiction need qualified review.",
-    anchorAliases: ["stablecoin-payments"],
+      "Key-management design and independent review, custody or MPC providers, swap and liquidity partners, app-store and platform access, and the permissions required wherever customer assets are held on the customer's behalf.",
+    anchorAliases: ["blockchain-infrastructure-security", "digital-ownership-consumer-networks"],
+  },
+  {
+    id: "stablecoin-payments-settlement",
+    icon: "coins",
+    title: "Stablecoin Payments & Settlement",
+    description: "Acceptance, payouts, treasury and settlement that connect digital value with local money.",
+    overview:
+      "We follow the full journey from a payer's instruction to funds the recipient can actually use. Stablecoins may carry the value, but the product is the onboarding, conversion, reconciliation and support around them. We look at the specific customer and corridor, what the current alternative costs and whether the service is used again after the first transaction. The investment case should explain the whole operating model, not the speed of one transfer.",
+    businessTypes:
+      "Merchant acceptance; cross-border collection and payout; business and payroll payments; treasury and reconciliation tools; settlement orchestration between stablecoins and local rails.",
+    commercialQuestions:
+      "Payment volume is not revenue. We examine processing fees, conversion spread, partner and banking costs, liquidity requirements and support cost for the actual route served, not a blended figure that hides the expensive corridor.",
+    questionsWeAsk: [
+      "Who receives, holds, converts and pays out the funds?",
+      "What makes a customer use the service a second time?",
+      "How are delayed, rejected or mismatched payments resolved, and by whom?",
+    ],
+    keyDependencies:
+      "Banking and payout partners, stablecoin issuer exposure, liquidity in each corridor, custody of customer funds and the permissions required for the activity in each jurisdiction. These need qualified review before any view on the business is complete.",
+    anchorAliases: ["stablecoins-payments", "stablecoin-payments", "payment-infrastructure", "local-settlement", "focused-financial-products"],
+  },
+  {
+    id: "infrastructure-for-operators",
+    icon: "layers",
+    title: "Infrastructure for These Businesses",
+    description: "Compliance, custody, data and settlement tools built for exchanges, wallets and payment companies.",
+    overview:
+      "We consider infrastructure where the customer is one of the three businesses above and the problem is recurring. Transaction monitoring, travel-rule messaging, custody technology, reconciliation and settlement tooling fall here. The question is whether an operator would pay for it, keep paying for it and be worse off without it.",
+    businessTypes:
+      "Compliance and monitoring tools; custody and key-management infrastructure; reconciliation and treasury software; settlement, on-ramp and banking connectivity for operators.",
+    commercialQuestions:
+      "Subscription, usage-based and enterprise models are examined against delivery cost, customer concentration and the switching cost for an operator. A tool sold to five exchanges has a different risk profile from one sold to five hundred wallets.",
+    questionsWeAsk: [
+      "Which recurring operator problem is solved?",
+      "Why would an exchange or payment company choose this over building it?",
+      "What happens to the operator's customers if this service fails?",
+    ],
+    keyDependencies:
+      "Data access, integration effort, security assumptions, uptime commitments and dependence on a small number of operator customers or on a single upstream provider.",
+    anchorAliases: ["ai-crypto-decentralized-networks"],
   },
   {
     id: "tokenization-onchain-markets",
-    icon: "layers",
-    title: "Tokenization & Onchain Markets",
-    description: "Infrastructure for representing assets and administering ownership in digital markets.",
+    icon: "globe",
+    title: "Tokenized Assets & Onchain Markets",
+    description: "Issuance, administration and trading of tokenized assets where an exchange or custodian is the customer.",
     overview:
-      "We consider products that connect a digital record with an identifiable asset, right or administrative process. The evaluation begins with what is represented and how that relationship is maintained outside the software. Issuance is only one part of the lifecycle; servicing, reporting, transfer conditions and any redemption process also matter. We look for a concrete improvement for issuers, investors or service providers, rather than treating a digital representation as sufficient evidence of demand or liquidity.",
+      "We consider products that connect a digital record with an identifiable asset, right or administrative process, and that are sold to or operated by a venue, custodian or payment company. The evaluation begins with what is represented and how that relationship is maintained outside the software. Issuance is one part of the lifecycle; servicing, reporting, transfer conditions and any redemption process also matter. We look for a concrete improvement for issuers, investors or operators, rather than treating a digital representation as evidence of demand or liquidity.",
     businessTypes:
-      "Asset issuance and administration tools; ownership records; reporting; transfer controls; servicing; collateral workflows and market connectivity.",
+      "Asset issuance and administration tools; ownership records; reporting; transfer controls; servicing; collateral workflows and market connectivity for venues and custodians.",
     commercialQuestions:
       "Potential models include issuance, administration, servicing, software and transaction fees. We examine who pays, the ongoing obligations and the cost of maintaining accurate records and external relationships.",
     questionsWeAsk: [
       "What asset or right is represented, and how is that connection established?",
       "Who is responsible for servicing, reporting, transfer conditions and disputes?",
-      "Which customer workflow improves, and what demonstrates demand for it?",
+      "Which operator workflow improves, and what demonstrates demand for it?",
     ],
     keyDependencies:
-      "Areas for review include underlying asset information, custody, servicing counterparties, transfer restrictions and any claim of redemption or liquidity. Do not equate a token record with legal certainty or a ready market.",
+      "Underlying asset information, custody, servicing counterparties, transfer restrictions and any claim of redemption or liquidity. A token record is not legal certainty or a ready market.",
     anchorAliases: [],
-  },
-  {
-    id: "defi-financial-infrastructure",
-    icon: "bars",
-    title: "DeFi & Financial Infrastructure",
-    description: "Systems for trading, lending, liquidity and other digital financial activity.",
-    overview:
-      "We evaluate the financial function a product performs and the incentives that keep it operating. That involves understanding its users, counterparties, asset flows and rules for participation. A company's commercial position should be distinguished from the activity of a protocol, and temporary rewards should be examined separately from repeat demand. We are interested in a clearly explained service, a defensible business model and a realistic account of how the system behaves under pressure.",
-    businessTypes:
-      "Trading infrastructure; decentralized exchanges; lending and collateral systems; liquidity tools; portfolio and risk software; institutional access infrastructure.",
-    commercialQuestions:
-      "We examine fee generation, the entity entitled to revenue, delivery costs and incentive spending. Protocol activity or token ownership must not be presented as company revenue without establishing the actual relationship.",
-    questionsWeAsk: [
-      "Which participants use the service, and why would they continue without temporary rewards?",
-      "Where does revenue accrue, and what are the economics of serving those users?",
-      "What happens when liquidity, collateral values or external price inputs deteriorate?",
-    ],
-    keyDependencies:
-      "Review includes smart-contract controls, governance, collateral, liquidity concentration and external price information. A model should explain adverse conditions, not only normal activity.",
-    anchorAliases: [],
-  },
-  {
-    id: "ai-crypto-decentralized-networks",
-    icon: "globe",
-    title: "AI × Crypto & Decentralized Networks",
-    description: "Intelligent software, verifiable coordination and distributed resources with a practical purpose.",
-    overview:
-      "We begin with a workload or coordination problem rather than a combination of technology labels. The question is whether intelligent software, a shared digital record or distributed physical resources makes the proposed service more useful. We examine how work is requested, performed, checked and paid for, and which participants bear the costs. A convincing model needs demand for the service itself, alongside a credible account of resource quality and network participation.",
-    businessTypes:
-      "Agent infrastructure; machine payments; decentralized compute, storage, connectivity and data services; coordination tools for distributed physical infrastructure.",
-    commercialQuestions:
-      "We examine usage and service revenue alongside hardware costs, capacity utilization, contributor payments and verification costs. Incentives should be distinguished from customer spending on a useful workload.",
-    questionsWeAsk: [
-      "Why are these technologies needed together rather than through a simpler architecture?",
-      "How are resource quality, completed work and permissions verified?",
-      "Who owns the customer relationship, and what supports reliable service delivery?",
-    ],
-    keyDependencies:
-      "Areas for review include resource availability, hardware economics, workload verification, data rights and concentration in demand. Avoid assuming that a large contributor network automatically creates a sustainable business.",
-    anchorAliases: [],
-  },
-  {
-    id: "digital-ownership-consumer-networks",
-    icon: "people",
-    title: "Digital Ownership & Consumer Networks",
-    description: "Applications that make ownership, identity and participation meaningful to users.",
-    overview:
-      "We look for products whose appeal can be explained through a customer experience, not only through an asset price. The review starts with what users do, why they return and how ownership or participation improves that experience. Distribution, onboarding and support matter alongside the underlying technology. We consider the relationship between the product, its users and any incentives, with an emphasis on whether useful activity can continue when promotional rewards change.",
-    businessTypes:
-      "Consumer applications; games; identity products; creator tools; social experiences; digital collectibles and community platforms.",
-    commercialQuestions:
-      "We examine subscriptions, software fees, purchases and marketplace models in relation to acquisition costs, retention and incentive spending. User activity and speculative trading are assessed separately.",
-    questionsWeAsk: [
-      "What do users gain beyond the possibility of an asset increasing in value?",
-      "Which behavior indicates repeat value rather than a short promotional visit?",
-      "How does the product reach its audience and protect the quality of that experience?",
-    ],
-    keyDependencies:
-      "Review includes platform access, user permissions, content rights, incentive dependence and changes in user behavior. Relevant safety and privacy responsibilities need to be understood for the actual audience.",
-    anchorAliases: ["focused-financial-products"],
   },
 ];
