@@ -16,6 +16,19 @@ export function SelectedInvestmentPublished() {
           A closer look at selected investments, the businesses behind them and our specific role.
         </p>
         <p className="experience-note">Selected examples only; not a complete investment record.</p>
+        <p className="deck-actions">
+          <a
+            className="deck-view"
+            href="/documents/novarin-capital-pitch-deck.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View the pitch deck
+          </a>
+          <a className="deck-download" href="/documents/novarin-capital-pitch-deck.pdf" download="Novarin-Capital-Pitch-Deck.pdf">
+            Download
+          </a>
+        </p>
         <div className="case-list">
           {cases.map((item) => (
             <InvestmentCaseCard key={item.id} item={item} />

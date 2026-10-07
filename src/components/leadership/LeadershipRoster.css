@@ -205,7 +205,7 @@
 
 @media (min-width: 960px) {
   .leadership-cards {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px 20px;
   }
 
