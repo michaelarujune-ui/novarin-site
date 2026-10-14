@@ -25,7 +25,7 @@ These files are decorative stock photographs. They are not pictures of Novarin o
 | `08-perspectives-hero.jpg` | Perspectives hero |
 | `09-contact-hero.jpg` | Contact hero |
 | `leadership-managing-partner.jpg` | Leadership, Managing Partner portrait |
-| `leadership-cio.jpg` | Leadership, CIO portrait |
+| `leadership-general-partner.jpg` | Leadership, General Partner portrait |
 | `leadership-partner.png` | Leadership, Partner portrait |
 | `leadership-chairman-president.jpg` | Leadership, Chairman & President portrait |
 
